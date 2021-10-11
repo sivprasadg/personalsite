@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sivapras.G</title>
+    <style>
+      @font-face {
+        font-family: Calibri;
+        panose-1: 2 15 5 2 2 2 4 3 2 4;
+        mso-font-charset: 0;
+        mso-generic-font-family: swiss;
+        mso-font-pitch: variable;
+        mso-font-signature: -536870145 1073786111 1 0 415 0;
+      }
+      /* Style Definitions */
+      p.MsoNormal,
+      li.MsoNormal,
+      div.MsoNormal {
+        mso-style-unhide: no;
+        mso-style-qformat: yes;
+        mso-style-parent: "";
+        margin-top: 2pt;
+        margin-right: 0in;
+        margin-bottom: 8pt;
+        margin-left: 0in;
+        line-height: 120%;
+        mso-pagination: widow-orphan;
+        font-size: 15pt;
+        font-family: "Calibri", sans-serif;
+        mso-ascii-font-family: Calibri;
+        mso-ascii-theme-font: minor-latin;
+        mso-fareast-font-family: "Times New Roman";
+        mso-fareast-theme-font: minor-fareast;
+        mso-hansi-font-family: Calibri;
+        mso-hansi-theme-font: minor-latin;
+        mso-bidi-font-family: "Times New Roman";
+        mso-bidi-theme-font: minor-bidi;
+        color: #595959;
+        mso-themecolor: text1;
+        mso-themetint: 166;
+        mso-font-kerning: 10pt;
+        mso-fareast-language: JA;
+      }
+      h1 {
+        mso-style-qformat: yes;
+        mso-style-next: Normal;
+        margin-top: 2pt;
+        margin-right: 0in;
+        margin-bottom: 8pt;
+        margin-left: 0in;
+        text-align: right;
+        line-height: 120%;
+        mso-pagination: widow-orphan;
+        mso-outline-level: 1;
+        font-size: 15.5pt;
+        font-family: "Calibri", sans-serif;
+        mso-ascii-font-family: Calibri;
+        mso-ascii-theme-font: major-latin;
+        mso-fareast-font-family: "Times New Roman";
+        mso-fareast-theme-font: major-fareast;
+        mso-hansi-font-family: Calibri;
+        mso-hansi-theme-font: major-latin;
+        mso-bidi-font-family: "Times New Roman";
+        mso-bidi-theme-font: major-bidi;
+        color: #5c2d91;
+        mso-themecolor: accent1;
+        text-transform: uppercase;
+        mso-font-kerning: 10pt;
+        mso-fareast-language: JA;
+        font-weight: normal;
+      }
+      h2 {
+        mso-style-qformat: yes;
+        mso-style-next: Normal;
+        margin-top: 2pt;
+        margin-right: 0in;
+        margin-bottom: 2pt;
+        margin-left: 0in;
+        line-height: 120%;
+        mso-pagination: widow-orphan lines-together;
+        page-break-after: avoid;
+        mso-outline-level: 2;
+        font-size: 10pt;
+        font-family: "Calibri", sans-serif;
+        mso-ascii-font-family: Calibri;
+        mso-ascii-theme-font: major-latin;
+        mso-fareast-font-family: "Times New Roman";
+        mso-fareast-theme-font: major-fareast;
+        mso-hansi-font-family: Calibri;
+        mso-hansi-theme-font: major-latin;
+        mso-bidi-font-family: "Times New Roman";
+        mso-bidi-theme-font: major-bidi;
+        color: #404040;
+        mso-themecolor: text1;
+        mso-themetint: 191;
+        text-transform: uppercase;
+        mso-font-kerning: 10pt;
+        mso-ligatures: standardcontextual;
+        mso-fareast-language: JA;
+      }
+      p.ResumeText,
+      li.ResumeText,
+      div.ResumeText {
+        mso-style-name: "Resume Text";
+        mso-style-unhide: no;
+        mso-style-qformat: yes;
+        margin-top: 2pt;
+        margin-right: 1in;
+        margin-bottom: 2pt;
+        margin-left: 0in;
+        line-height: 120%;
+        mso-pagination: widow-orphan;
+        font-size: 15pt;
+        font-family: "Calibri", sans-serif;
+        mso-ascii-font-family: Calibri;
+        mso-ascii-theme-font: minor-latin;
+        mso-fareast-font-family: "Times New Roman";
+        mso-fareast-theme-font: minor-fareast;
+        mso-hansi-font-family: Calibri;
+        mso-hansi-theme-font: minor-latin;
+        mso-bidi-font-family: "Times New Roman";
+        mso-bidi-theme-font: minor-bidi;
+        color: #595959;
+        mso-themecolor: text1;
+        mso-themetint: 166;
+        mso-font-kerning: 10pt;
+        mso-fareast-language: JA;
+      }
+      p.ContactInfo,
+      li.ContactInfo,
+      div.ContactInfo {
+        mso-style-name: "Contact Info";
+        mso-style-unhide: no;
+        mso-style-qformat: yes;
+        margin-top: 2pt;
+        margin-right: 0in;
+        margin-bottom: 0in;
+        margin-left: 0in;
+        margin-bottom: 0.0001pt;
+        text-align: right;
+        mso-pagination: widow-orphan;
+        font-size: 12.5pt;
+        font-family: "Calibri", sans-serif;
+        mso-ascii-font-family: Calibri;
+        mso-ascii-theme-font: minor-latin;
+        mso-fareast-font-family: "Times New Roman";
+        mso-fareast-theme-font: minor-fareast;
+        mso-hansi-font-family: Calibri;
+        mso-hansi-theme-font: minor-latin;
+        mso-bidi-font-family: "Times New Roman";
+        mso-bidi-theme-font: minor-bidi;
+        color: #595959;
+        mso-themecolor: text1;
+        mso-themetint: 166;
+        mso-font-kerning: 10pt;
+        mso-fareast-language: JA;
+      }
+      p.Name,
+      li.Name,
+      div.Name {
+        mso-style-name: Name;
+        mso-style-unhide: no;
+        mso-style-qformat: yes;
+        mso-style-next: Normal;
+        margin-top: 12pt;
+        margin-right: 0.1in;
+        margin-bottom: 8pt;
+        margin-left: 0.1in;
+        line-height: 120%;
+        mso-pagination: widow-orphan;
+        background: #5c2d91;
+        mso-background-themecolor: accent1;
+        border: none;
+        mso-border-alt: solid #5c2d91 0.5pt;
+        mso-border-themecolor: accent1;
+        padding: 0in;
+        mso-padding-alt: 4pt 6pt 4pt 6pt;
+        font-size: 18pt;
+        font-family: "Calibri", sans-serif;
+        mso-ascii-font-family: Calibri;
+        mso-ascii-theme-font: major-latin;
+        mso-fareast-font-family: "Times New Roman";
+        mso-fareast-theme-font: major-fareast;
+        mso-hansi-font-family: Calibri;
+        mso-hansi-theme-font: major-latin;
+        mso-bidi-font-family: "Times New Roman";
+        mso-bidi-theme-font: major-bidi;
+        color: white;
+        mso-themecolor: background1;
+        text-transform: uppercase;
+        mso-font-kerning: 10pt;
+        mso-fareast-language: JA;
+      }
+    </style>
+  </head>
+  <body>
+    <p class=ContactInfo>
+      https://github.com/g-sivaprasad
+    </p>
+    
+    <p class=ContactInfo>
+       <a href="">
+        <a href="https://mctasia-my.sharepoint.com/:f:/g/personal/sivaprasad_g_mctasia_onmicrosoft_com/EjjwFza1LY5PubKsPU0lr80BOkXqEPecO7qR64jz6xtcug?e=Ogn7Aw" translate="/blank">Doc reference</a>
+       </a>
+    </p>
+    
+    <p class=ContactInfo>
+      sivaprasad.g@live.com
+    
+    <p class=ContactInfo>
+      India
+    </p>
+    
+    <div style='mso-element:para-border-div;border:solid #5C2D91 1.0pt;mso-border-themecolor:accent1;mso-border-alt:solid #5C2D91 .5pt;
+     mso-border-themecolor:accent1;padding:4.0pt 6.0pt 4.0pt 6.0pt;background:#5C2D91;mso-background-themecolor:accent1;margin-left:.1in;margin-right:.1in'>
+      <p class=Name>
+        Sivaprasad. G
+      </p>
+    </div>
+    
+    <table class=ResumeTable border=0 cellspacing=0 cellpadding=0 title="Resume text" summary=Resume width="100%" style='width:100.0%;border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:.1in 0in .1in 0in'>
+     <td width=119 valign=top style='width:88.9pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+      <h1>
+        Objective
+      </h1>
+     </td>
+    
+    <td width=31 valign=top style='width:23.6pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+    </td>
+    
+    <td width=522 valign=top style='width:391.5pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+      <p class=MsoNormal>
+        I am a Microsoft Certified Trainer and a freelance corporate trainer, with 2+ years of experience in IT training with Microsoft partners, delivered corporate and individual learning program, through the instructor led training and Virtual classroom Instructor led training. 
+      </p>
+      <p class=MsoNormal>
+        <strong>Technical Certifications</strong> These are my current Microsoft Certifications 👇 
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f1be9ac1-10bb-41d9-bfe4-ae8522b4f270" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script> 
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="c6c7d3ef-e275-40a8-967d-990a52064c0d" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="9d8a416c-f603-4daa-8a4e-dfa50c8432b3" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="9526f480-ce40-4626-b39d-ebbe16d901ac" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="6ed676b2-333a-468c-aabf-16c33f03b208" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+      
+    </td>
+    
+    <tr style='mso-yfti-irow:1'>
+      <td width=119 valign=top style='width:88.9pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+        <h1>
+          Work History
+        </h1>
+      </td>
+      <td width=31 valign=top style='width:23.6pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+      </td>
+      <td width=522 valign=top style='width:391.5pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+      <span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
+      </span>
+      <h2>
+        <span style='font-weight: normal;font-size: 15pt;color:#404040;'>
+        Excendo - The Knowledge Academy, Bangalore — Freelance
+        Trainer(Microsoft Technology & Programming Languages )
+        <p style="font-size: 10pt;">JUNE 2018- PRESENT</p>
+         </span>
+        </h2>
+         <span class=MsoPlaceholderText>
+           <span style='color:#404040;mso-themecolor:text1;mso-themetint:191'>
+            
+            <ul>
+             <li><p class=ResumeText> 
+               Delivered five days onsite training session on Language
+              understanding intelligent service for junior IT employees
+            </p>
+          </li>
+          <li>
+            <p class=ResumeText>
+              Provide strong foundational skills in programming and enabled
+      the employees to build AI featured apps by using .net and
+      Python domains
+             </p>
+          </li>
+          <li>
+            <p class=ResumeText>
+              Provide hands on practice on Azure cognitive services as a part of
+      the training session.
+          </li>
+        </p>
+            </ul>  
+            
+          
+         
+         
+           </span>
+         </span>
+         <h2>
+          <span class=MsoPlaceholderText>
+            <span style='font-weight: normal;font-size: 15pt;color:#404040;'>
+              Microsoft India, Hyderabad- Bangalore — Microsoft Student
+              Partner, (Microsoft Student Developer Community)
+              <p style="font-size: 10pt;">Nov 2012 Dec 2013 & June 2015 - June 2017</p>
+            </span>
+          </span>
+        </h2>
+           
+        <ul>
+          <li><p class=ResumeText>
+            Delivered 50+ training sessions on Microsoft
+  technology and programming for various student developers in
+  Hyderabad and Bangalore during the MSP tenure.
+           </p></li>
+           <li><p class=ResumeText>
+          Qualified exam for Microsoft Certified Professional HTML, CSS, Javascript certification.</p> 
+        </li>
+        <li>
+          <p class=ResumeText>
+            Being a Microsoft Student Partner, in addition to getting abreast
+            with the latest Microsoft technology tools and platforms
+            engaged myself in Technology Evangelism and a huge network
+            ecosystem collaborating for technical developments and
+            improvements.
+            </p>
+        </li>
+        </ul>  
+      </td>
+     </tr>
+    
+    <tr style='mso-yfti-irow:2'>
+      <td width=119 valign=top style='width:88.9pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+        <h1>
+          Skills
+        </h1>
+      </td>
+      <td width=31 valign=top style='width:23.6pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+      </td>
+      <td width=522 valign=top style='width:391.5pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;
+      mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+        <span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
+        <p class=ResumeText>
+          Python, C#, HTML and CSS
+         </p>
+        <p class=ResumeText>
+          Django, Flask, Azure 
+        </p>
+        <p class=ResumeText>
+          Visual Studio, Visual Stuio Code 
+        </p>
+         
+      </td>
+     </tr>
+     <tr style='mso-yfti-irow:4'>
+      <td width=119 valign=top style='width:88.9pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+      <h1>
+        Education
+      </h1>
+      </td>
+      <td width=31 valign=top style='width:23.6pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'>
+      </td>
+      <td width=522 valign=top style='width:391.5pt;border:none;border-bottom:solid #5C2D91 1.0pt;mso-border-bottom-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #5C2D91 .5pt;mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #5C2D91 .5pt;mso-border-bottom-themecolor:accent1;padding:.1in 0in .1in 0in'><span style='font-size:10.0pt;line-height:120%;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;mso-font-kerning:10.0pt;mso-ansi-language:EN-US;mso-fareast-language:JA;mso-bidi-language:AR-SA'>
+      </span>
+         <span style="font-weight: normal;font-size: 15pt;color:#404040;">
+          KUVEMPU University, Karnataka — Bachelor of Information Technology  </span>
+          
+          <p style="font-size: 10pt;">MARCH 2011 -  MAY 2013<br>
+          <p><strong>Grade</strong> FIRST CLASS</p>   
+          </span>
+          
+          
+         
+         
+     
+        </td>
+     </tr>
+     
+     
+     
+    </table>
+    
+    </div>
+    
+    </body>
+    
+    </html>
+    
+  </body>
+</html>
